@@ -1,2 +1,0 @@
-# sphinxsearch
-Sphinxsearch docker container
