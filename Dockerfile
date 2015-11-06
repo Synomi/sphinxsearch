@@ -8,5 +8,7 @@ RUN cp /etc/sphinxsearch/sphinx-min.conf.dist /etc/sphinxsearch/sphinx.conf
 
 VOLUME ["/etc/sphinxsearch"]
 
+EXPOSE 9312 9306
+
 CMD /usr/bin/searchd -c /etc/sphinxsearch/sphinx.conf --nodetach
 
