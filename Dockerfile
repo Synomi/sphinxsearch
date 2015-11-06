@@ -10,5 +10,6 @@ VOLUME ["/etc/sphinxsearch"]
 
 EXPOSE 9312 9306
 
-CMD /usr/bin/searchd -c /etc/sphinxsearch/sphinx.conf --nodetach
+CMD /usr/bin/indexer --all && /usr/bin/searchd -c /etc/sphinxsearch/sphinx.conf --nodetach
+
 
